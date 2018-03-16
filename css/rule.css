@@ -1,0 +1,151 @@
+:root:after{content:"author:ningwenjing;creat:2018-03-07;update:2018-03-07";display: none;}
+body{
+    background: #FFF;
+    --spacing1:40px;
+    --spacing2:30px;
+}
+pre{
+    white-space:pre-wrap;
+    background: transparent;
+    padding: 0;
+}
+code{
+    padding: 2px 3px;
+    font-family: "Courier New";
+    color: #e45649;
+    background: #fafafa;
+}
+.header{
+    padding: 80px 0;
+    background: linear-gradient(to left,#7baffe,#fdc4ff, #95dcfd 50%,#fdc4ff ,#7baffe);
+    text-align: center;
+    animation: bgAni 30s both linear infinite;
+    background-size: 200% 100%;
+}
+@keyframes bgAni{
+    0%{
+        background-position: 0 0;
+    }
+    100%{
+        background-position: -200% 0;
+    }
+}
+header h1{
+    color: #fff;
+    font-size: 46px;
+    font-weight: bold;
+}
+header p{
+    color: #fff;
+    font-size: 16px;
+    line-height: 2;
+}
+.main{
+    display: flex;
+}
+.main.fixed .directory{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+}
+.main.fixed .content{
+    margin-left: 320px;
+}
+.directory{
+    width: 320px;   
+    padding-bottom: 30px;
+    background: #fafafa;
+    text-align: center;
+    overflow-y: auto;
+    transition: .2s;
+}
+    
+.directory h2{
+    display: inline-block;   
+    line-height: 2;   
+    margin: 10px 0;
+    font-size: 30px;
+    border-bottom: solid 4px #c4a7ff;
+}
+.directory h3{
+    font-size: 24px;
+}
+
+.directory-list{
+    margin-bottom: 50px;
+    padding: 0 20px;
+    text-align: left;
+    box-sizing: border-box;
+}
+.directory-list li{
+    margin: 10px 0 0 20px;
+    font-size: 16px;
+    line-height: 20px;
+    list-style-type: disc;       
+}
+.directory-list a:hover{color: #7baffe;}
+.content{
+    flex: 1;
+}
+.content h2{
+    padding: 15px 0;
+    margin: 10px 0;
+    font-size: 30px;
+    text-align: center;       
+}
+
+.content-main{
+    display: flex;
+    border-top: solid 1px #eee;
+}
+.content-show{
+    background: #fff;
+    width: 50%;
+    padding-bottom: 20px;
+    font-size: 16px;
+    box-sizing: border-box;
+    
+}
+.content-show + .content-show{
+    padding-left: var(--spacing2);
+    background: #fafafa;
+}
+.content-show:nth-child(1){
+    padding-left: var(--spacing1);
+    padding-right: var(--spacing2);
+}
+.content-show h3{
+    font-size: 24px;
+    line-height: 3;
+}
+.content-show h4{
+    font-size: 20px;
+    line-height: 3;
+}
+.content-show ul li{
+    margin: 0 0 10px 30px;
+    list-style: disc;
+}
+.content-show ol li{
+    margin: 0 0 10px 30px;
+    list-style: decimal;
+}
+.content-show a{color: #7baffe; transition: .3s;}
+.content-show a:hover{color: #c4a7ff}
+.content-show p{
+    margin-bottom: 10px;
+}
+blockquote{
+    margin: 10px;
+    font-style: italic; 
+    color: #999;
+    
+}
+.footer{
+    padding: 50px;
+    line-height: 2;
+    font-size: 14px;
+    color: #000;
+    text-align: center;
+}

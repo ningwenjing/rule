@@ -1,0 +1,52 @@
+body{
+    font-size: 14px;
+    background: #fff;
+}
+a{ color: #0f9cff;}
+code{
+    margin: 0 5px;
+    padding: 2px 5px;
+    font-family: Consolas;
+    color: #0f9cff;
+    background: #f2f2f2;
+}
+.hljs{padding: 0 ;padding-left: 20px; margin: 0;}
+.wrap{
+    width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+.wrap h1{
+    font-size: 46px;
+    line-height: 100px;
+    text-align: center;
+}
+.box h2{
+    font-size: 22px;
+    line-height: 3;
+}
+.box h3{
+    font-size: 18px;
+    line-height: 3;
+}
+li{
+    margin-left: 20px;
+    list-style: disc;
+    line-height: 30px;
+}
+.code{
+    display: flex;
+    background: #fafafa;
+}
+.code-list{
+    width: 50%;
+    box-sizing: border-box;
+}
+.code-list + .code-list code{
+    border-left: dashed 1px #ccc;
+}
+.table-rule td{
+    height: 30px;
+    padding: 0 5px;
+    border: solid 1px #ccc;
+}
